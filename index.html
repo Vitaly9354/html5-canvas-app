@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML5 Canvas App</title>   
+		<link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <div>
+        <div id="info">
+            Click on the map to add control point. Press &lsquo;enter&rsquo; to start/stop arrow moving. Press &lsquo;delete&rsquo; to reset distance.
+        </div>
+        <canvas id="canvas"></canvas>
+				<label for="visibility">
+					<input type="checkbox" onclick="APP.togglePathVisibility()" />
+					Path always visible &nbsp;
+				</label>
+    </div>  
+	
+		<script src="/js/keys.js"></script>
+		<script src="/js/queue.js"></script>
+    <script src="/js/utils.js"></script>	
+		<script src="/js/app.js"></script>
+</body>
+</html>
